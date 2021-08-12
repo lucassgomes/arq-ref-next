@@ -1296,6 +1296,17 @@
     auto-bind "~4.0.0"
     tslib "~2.3.0"
 
+"@graphql-codegen/typescript-vue-apollo-smart-ops@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-vue-apollo-smart-ops/-/typescript-vue-apollo-smart-ops-2.0.0.tgz#5ea30d3c9102d1fbcf7c833b0edb338f369a325d"
+  integrity sha512-wzi3jOUBCyK7NFoFxfS1IkbqEvQqH5fudQEzaN344G5wKn/0GMyqDHX7HWhi+Y56vwofA6vFdqjFBI/tJugiDA==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "^2.0.0"
+    "@graphql-codegen/visitor-plugin-common" "2.0.0"
+    auto-bind "~4.0.0"
+    change-case-all "1.0.14"
+    tslib "~2.2.0"
+
 "@graphql-codegen/typescript-vue-apollo@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-vue-apollo/-/typescript-vue-apollo-3.0.0.tgz#2a5b20312f2b93220e41dbbf9b5dff2f6bad0cbd"
@@ -9220,7 +9231,7 @@ lodash.isnumber@^3.0.3:
   resolved "https://registry.yarnpkg.com/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz#3ce76810c5928d03352301ac287317f11c0b1ffc"
   integrity sha1-POdoEMWSjQM1IwGsKHMX8RwLH/w=
 
-lodash.isplainobject@^4.0.6:
+lodash.isplainobject@^4.0, lodash.isplainobject@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
   integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
@@ -9234,6 +9245,11 @@ lodash.kebabcase@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/lodash.kebabcase/-/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
   integrity sha1-hImxyw0p/4gZXM7KRI/21swpXDY=
+
+lodash.mapvalues@^4.6:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.mapvalues/-/lodash.mapvalues-4.6.0.tgz#1bafa5005de9dd6f4f26668c30ca37230cc9689c"
+  integrity sha1-G6+lAF3p3W9PJmaMMMo3IwzJaJw=
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -13862,6 +13878,14 @@ vscode-uri@^1.0.6:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/vscode-uri/-/vscode-uri-1.0.8.tgz#9769aaececae4026fb6e22359cb38946580ded59"
   integrity sha512-obtSWTlbJ+a+TFRYGaUumtVwb+InIUVI0Lu0VBUAPmj2cU5JutEXg3xUE0c2J5Tcy7h2DEKVJBFi+Y9ZSFzzPQ==
+
+vue-apollo-smart-ops@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vue-apollo-smart-ops/-/vue-apollo-smart-ops-0.0.4.tgz#856f0033852c5ac43fc84a9874bd14dd6eb7ddcc"
+  integrity sha512-EM/SZXiP4KCcDGg6Ns1rQHOg2Hdc++35yqtfr1vnkt1sXCRK/N2G4v36+8R447HZYO3TKAcAXXU+iaWEg4V2kg==
+  dependencies:
+    lodash.isplainobject "^4.0"
+    lodash.mapvalues "^4.6"
 
 vue-apollo@^3.0.5:
   version "3.0.7"

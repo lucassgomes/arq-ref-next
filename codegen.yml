@@ -2,17 +2,19 @@ overwrite: true
 schema: "https://api.spacex.land/graphql"
 documents: "./src/graphql/**/*.graphql"
 generates:
-  src/types/graphql.d.ts:
+  src/generated/types/graphql.d.ts:
     - typescript-graphql-files-modules
-  src/types/graphql.ts:
+  src/generated/graphql.ts:
     plugins:
       - typescript
       - typescript-operations
-      - typescript-vue-apollo
+      - typescript-vue-apollo-smart-ops
     config:
       withHooks: true
-      withCompositionFunctions: true
-  src/types/introspection.ts:
+  src/generated/schema.json:
+    plugins:
+      - introspection
+  src/generated/fragment-matcher.ts:
     plugins:
       - fragment-matcher
 hooks:

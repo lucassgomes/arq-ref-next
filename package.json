@@ -11,7 +11,8 @@
     "@nuxtjs/apollo": "^4.0.1-rc.5",
     "@nuxtjs/composition-api": "^0.26.0",
     "@vue/apollo-composable": "^4.0.0-alpha.14",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "vue-apollo-smart-ops": "^0.0.4"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.0.1",
@@ -22,6 +23,7 @@
     "@graphql-codegen/typescript-graphql-files-modules": "^2.0.0",
     "@graphql-codegen/typescript-operations": "^2.0.1",
     "@graphql-codegen/typescript-vue-apollo": "^3.0.0",
+    "@graphql-codegen/typescript-vue-apollo-smart-ops": "^2.0.0",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.1",

@@ -28,7 +28,8 @@
       "vue-apollo/types"
     ],
     "typeRoots": [
-      "./src/types"
+      "./src/genereted",
+      "./src/generated/types"
     ]
   },
   "exclude": [

@@ -1,7 +1,15 @@
 export default {
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss', '@nuxtjs/composition-api/module'],
+  build: {
+    babel: {
+      plugins: [
+        ['@babel/plugin-proposal-class-properties', { loose: true }],
+        ['@babel/plugin-proposal-private-methods', { loose: true }],
+        ['@babel/plugin-proposal-private-property-in-object', { loose: true }],
+      ],
+    },
+  },
   modules: ['@nuxtjs/apollo'],
-  plugins: ['~/plugins/apollo/provider.ts'],
   srcDir: 'src/',
   apollo: {
     clientConfigs: {
