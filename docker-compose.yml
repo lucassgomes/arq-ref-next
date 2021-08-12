@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  frontend:
+    build: .
+    image: arq-ref-nuxt:latest
+    working_dir: /code
+    stdin_open: true
+    container_name: arq-ref-nuxt
+    volumes:
+      - ./:/code
+      - ./node_modules:/code/node_modules:cached
+    environment:
+      HOST: 0.0.0.0
+    ports:
+      - 80:3000

@@ -1,0 +1,21 @@
+overwrite: true
+schema: "https://api.spacex.land/graphql"
+documents: "./src/graphql/**/*.graphql"
+generates:
+  src/types/graphql.d.ts:
+    - typescript-graphql-files-modules
+  src/types/graphql.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-vue-apollo
+    config:
+      withHooks: true
+      withCompositionFunctions: true
+  src/types/introspection.ts:
+    plugins:
+      - fragment-matcher
+hooks:
+  afterAllFileWrite:
+    - prettier --write
+    
